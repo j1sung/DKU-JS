@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>별문자(*) 출력하기</title>
+    <script>
+        function printStar(n){
+            for(var i=0; i<n; i++){
+                for(var j=0; j<i+1; j++){
+                    document.write("*");
+                }
+                document.write('<br>');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>별 문자 출력하기</h2>
+    <hr>
+    <div id="result"></div>
+    <script>
+        var result = document.getElementById("result");
+
+        var n = prompt("정수를 입력하세요", "");
+
+        if(n == null){
+            // 취소 버튼이나 다이얼로그를 닫은 경우
+            result.innerHTML = "취소했군요!";
+        }
+        else if(n == ""){
+            // 아무 값도 입력하지 않은 경우
+            result.innerHTML = "값을 입력 해 주세요!";
+        }
+        else{
+            var N = parseDouble(n);
+            result.innerHTML = "N";
+
+        }
+    </script>
+</body>
+</html>

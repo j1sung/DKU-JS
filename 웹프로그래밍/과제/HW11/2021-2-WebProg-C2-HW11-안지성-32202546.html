@@ -1,0 +1,76 @@
+<!--HW11 안지성 32202546 dalssagi00@gmail.com-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>눈 내리는 샤갈의 마음</title>
+        <style>
+            body {
+                background-image: url("snow.jpg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+    
+            div {
+                border-style: none;
+                font-size: medium;
+                color: white;
+            }
+        </style>
+    </head>
+    <body >
+        <script>
+            var width = 728; 
+            var height = 455;
+            var snowcount = 30;
+    
+            function first_position() {
+                var text = "";
+                for (i=0; i<snowcount; i++) {
+                    ranlocation = Math.floor(Math.random() * (width + 1));
+                    rantoplocation = Math.floor(Math.random() * (height + 1));
+                    text = "<div style='position: absolute; top:" + rantoplocation + "px; left: " + ranlocation + "px;'>*</div>";
+                    document.body.innerHTML += text;
+                }
+            }
+    
+            function down_position() {
+                var arrdivs = document.getElementsByTagName("div");
+    
+                for (i=0; i<arrdivs.length; i++) {
+                    var newoffsettop = arrdivs[i].offsetTop + 10;
+                    var offsetleft = arrdivs[i].offsetLeft;
+    
+                    if ( newoffsettop > 455) {  /* 이미지 크기를 넘어간다면 */
+                        start_position(arrdivs[i]);
+                    } else {
+                        var newdiv = document.createElement("div");
+    
+                        newdiv.style.left = offsetleft;
+                        newdiv.style.top = newoffsettop;
+                        newdiv.style.position = "absolute";
+                        newdiv.innerHTML = "*";
+                        document.body.replaceChild(newdiv, arrdivs[i]);
+                    }
+                }
+            }
+    
+            function start_position(arrdiv) {
+                ranlocation = Math.floor(Math.random() * (width - 1 + 1) + 1);
+                rantoplocation = Math.floor(Math.random() * (height - 700 - 1 + 1) + 1); // 그림의 상단에서 눈이 생기도록 수치를 조정
+    
+                var newdiv = document.createElement("div");
+                
+                newdiv.style.left = ranlocation;
+                newdiv.style.top = rantoplocation;
+                newdiv.style.position = "absolute";
+                newdiv.innerHTML = "*";
+    
+                document.body.replaceChild(newdiv, arrdiv);
+            }
+
+            first_position();
+            setInterval("down_position()", 2000);
+        </script>
+    </body>
+</html>

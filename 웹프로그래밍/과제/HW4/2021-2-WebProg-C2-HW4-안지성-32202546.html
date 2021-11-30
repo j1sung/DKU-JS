@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>컴퓨터 기술 소개</title>
+    <link href="2021-2-WebProg-C2-HW4-안지성-32202546.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <embed src="https://www.youtube.com/v/t1SZcQasSnA?version=3&autohide=0&showinfo=0&autoplay=1&playlist=t1SZcQasSnA&hl=ko_KR&rel=0" type="application/x-shockwave-flash" width="350" height="25" allowscriptaccess="always" allowfullscreen="true"></embed>
+        <audio src="환상의 나라_잔나비.mp3" autoplay controls loop></audio>
+        <pre>크롬에서 음원 자동재생은 지원하지 않습니다.</pre>
+        <h1>서버</h1>
+        <hr>
+        <p>
+            <strong>서버(영어: server)</strong>는 클라이언트에게 네트워크를 통해 정보나 서비스를 제공하는 컴퓨터 시스템으로 컴퓨터 프로그램(server program) 또는 장치(device)를 의미한다.<br>
+            특히, 서버에서 동작하는 소프트웨어를 <strong>서버 소프트웨어(server software)</strong>라 한다.
+        </p>
+        <pre>
+    주로 리눅스 등의 운영 체제를 설치한 대형 컴퓨터를 쓰지만, 그렇지 않은 경우도 있다.
+    
+    <b>서버</b>는 프린터 제어나 파일 관리 등 네트워크 전체를 감시·제어하거나, 
+    메인프레임이나 공중망을 통한 다른 네트워크과의 연결, 
+    데이터·프로그램·파일 같은 소프트웨어 자원이나 모뎀·팩스·프린터 공유, 
+    기타 장비 등 하드웨어 자원을 공유할 수 있도록 도와주는 역할을 한다.
+    
+    <b>서버</b>는 사용자(클라이언트)의 요청에 의하여 서비스를 하는데 이와 같이 구성된 시스템을 클라이언트-서버 시스템이라고 하며, 
+    이는 하나 이상의 응용 프로그램을 상호 협력적인 환경에서 운용하는 분산처리 형태를 의미한다. 
+    즉, 서비스를 요청하는 클라이언트와 클라이언트의 요청을 처리하는 서버와의 협동작업을 통해서 사용자가 원하는 결과를 얻는 처리방식이 클라이언트-서버 시스템이다.
+    
+    클라이언트의 수가 5~20대 정도인 소규모 LAN의 경우에는 한 대의 서버로 충분히 모든 서비스를 소화할 수 있으나, 
+    대규모 LAN의 경우에는 여러 대의 서버를 배치하고, 파일 관리는 파일 서버, 프린터 제어는 프린터 서버, 
+    인터넷 등의 외부와의 교환은 통신 서버가 담당하는 등 각각 역할을 세분하게 된다.
+        </pre>
+    </header>
+    <nav>
+        <h2>목차</h2>
+        <hr>
+        <ul>
+            <li><a href="#역사">역사</a></li>
+            <li><a href="#서버 운영 체제">서버 운영 체제</a></li>
+            <li><a href="#종류">종류</a></li>
+            <ul>
+                <li><a href="#웹 서버">웹 서버</a></li>
+                <li><a href="#데이터베이스 서버">데이터베이스 서버</a></li>
+                <li><a href="#애플리케이션 서버">애플리케이션 서버</a></li>
+                <li><a href="#게임 서버">게임 서버</a></li>
+            </ul>
+        </ul>
+    </nav>
+    <section>
+        <article id="역사">
+            <h2><a href="https://ko.wikipedia.org/wiki/%EC%84%9C%EB%B2%84#%EC%97%AD%EC%82%AC" target="_blank">역사</a></h2>
+            <hr>
+            <p>
+                컴퓨팅에서의 "서버"(server)라는 용어의 이용은 대기행렬이론에서 비롯한 것으로, 20세기 중반으로 거슬러<br>
+                올라가면 켄들의 기호를 선보인 논문 Kendall (1953)에서 "서비스'와 함께 눈에 띄게 사용되었다. Erlang (1909)<br>
+                와 같은 초기의 논문들의 경우 "전화 교환원"과 같은 더 구체적인 용어가 사용된다.<br><br>
+        
+                컴퓨팅에서 "서버"는 적어도 RFC 5 (1969년)으로 거슬러 올라가며, 이 RFC는 ARPANET(인터넷의 선구자)을 기술하는 최초의 문서들 가운데 하나이며<br>
+                "사용자"와 대비되고 있고 두 가지 종류의 호스트와는 구별하고 있다: "서버 호스트", "사용자 호스트". "서비스를 제공"하는 것을 뜻하는 서빙(serving)<br>
+                이라는 용어 또한 RFC 4와 같은 초기 문서들로 거슬러 올라가며, "serving-host"와 "using-host"를 대조하고 있다.
+            </p>
+        </article>
+        <article id="서버 운영 체제">
+            <h2><a href="https://ko.wikipedia.org/wiki/%EC%84%9C%EB%B2%84#%EC%84%9C%EB%B2%84_%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C" target="_blank">서버 운영 체제</a></h2>
+            <hr>
+            <p>
+                잘 알려진 서버 운영 체제로는 이를테면 FreeBSD, 솔라리스, 리눅스 등이 있다. 유닉스는 본래 미니컴퓨터 운영 체제였으며 전통적인 미니컴퓨터를<br>
+                서버가 대체해감에 따라 서버는 효율적인 유닉스 기반의 운영 체제가 되었다.
+            </p>
+        </article>
+        <nav id="종류">
+            <h2><a href="https://ko.wikipedia.org/wiki/%EC%84%9C%EB%B2%84#%EC%A2%85%EB%A5%98" target="_blank">종류</a>&nbsp;&lt;&lt;&nbsp;더 많은 종류를 보려면 클릭</h2>
+            <hr>
+        </nav>
+        <article id="웹 서버">
+            <h2><a href="https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%84%9C%EB%B2%84" target="_blank">웹 서버</a></h2>
+            <p>
+                웹 서버(Web Server)는 HTTP를 통해 웹 브라우저에서 요청하는 HTML 문서나 오브젝트(이미지 파일 등)을<br>
+                전송해주는 서비스 프로그램을 말한다. 웹 서버 소프트웨어를 구동하는 하드웨어도 웹 서버라고 해서 혼동하는 경우가 간혹 있다.
+            </p>
+            <h3><a href="https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%84%9C%EB%B2%84#%EC%8B%9C%EC%9E%A5_%EA%B5%AC%EC%A1%B0" target="_blank">시장 구조</a></h3>
+            <p>아래 시장 점유율 목록은 2013년 5월 넷크래프트에서 조사한 결과이다.</p>
+            <table border="1">
+                <caption>주요 웹 서버의 시장 점유율</caption>
+                <thead>
+                    <tr>
+                        <th>제품</th>
+                        <th>제조업체</th>
+                        <th>웹 사이트 수</th>
+                        <th>백분율</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Apache_HTTP_server_logo_%282016%29.png/220px-Apache_HTTP_server_logo_%282016%29.png" alt="아파치 HTTP 서버"></td>
+                        <td>아파치</td>
+                        <td>359,441,468</td>
+                        <td>53.42%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAA+CAMAAAAmsHQcAAAAq1BMVEX////uUimCyjgdruz5uy5RT09bWVnk4+Tb29vtRAx/yTFeW1y5uLhpZmfR0NCkoqP19fUAquv62NDh8dN6xyTzjnzuTB7/0M6l23zc78v2hWrK8P//7tR7xvHE6f//znD5txH96sn7z3fFxMSJh4d1cnN8enqtrKyTkZKamZn84t7/8vHp9uD2+/LyiHTtPQBxxABJRUb4rZ71fmG85aOe13Hs+/+g1vX/3Z6QVUDAAAACkklEQVRYhe2X63bUIBCA8cKlhSHYu7a1KgEStdZVq77/kzlDWLf2lhy7h23PyfdjcyHZj4EZ2GVsZmZmZuax83Gn8OnzbuG8hvfLxVbm4vByb+Dr6xre/YNnma3Do+3nmb0n6nVKPsRrjB+ekMZI5js3Ueu1aB/iBRBDvzvQlgG307QOglLMjz59jxcaOko8sUz6aVomNb7l+ejjd3tjBBrbBB3GKxXdU95LOpUYjrPeuuFmPkrvFX3qTsoESY3My/7WQebi8GhvO1PqCFqvqdfQGfRG7piLQvDAOp6EcB6EEICmVoiFwdnAS5zYXgTgXAe9GIn425uB7zs/jgYud0u8TkfGrLAJva12LEByzrAewFulg0I3OK8TjUCje+d63eB1n+OVI/EeL/l5suS8eFmvJWuBFa/SXW7oaRgaTZmTtEcPy9mU34Eyv3p0fk9fFd6evSu8X3qVTg7DKV5Tvox6g9eU7BZbowaMeOgTZsR074sMel8OrLwshga//6/XXPd6uuUDDq/ONRvW5DUALVuNc1x5E0aKyaRVGWSg3KeEWIvXUekuvWgJJuGs03riQPemxbk1rU948NQG2A1FXuyiUf/pDTRyTXRUwRYXrXyicS1pgIbY4TKGE8ssHnps81HrSAVMNzHnxciKdaf3VtwtF+6etnV518fVOqrp/XVaOP79YeDspIb30WNzFg9bEFOpSRM35IfCabWSi1yWHQfcdmCkRNeDyF5Orj5v6ypUiXjllTzVEN7wKl5lgG94NxUvzm9F8RUvisFM/T29Ti+TPefNBry4gjQ8VAn5mpfSut+IF3/wbMabRF2vKxkFsa7XYhVJp2KdZevKfiRbvuCLOtvRvzg56U/9zMzMzMyT4A+J1UZ2itUT3QAAAABJRU5ErkJggg==" alt="인터넷 정보 서비스"></td>
+                        <td>마이크로소프트</td>
+                        <td>112,303,412</td>
+                        <td>16.69%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/220px-Nginx_logo.svg.png" alt="Nginx"></td>
+                        <td>NGINX, Inc.</td>
+                        <td>104,411,087</td>
+                        <td>15.52%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="data:image/png;base64,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" alt="구글 웹 서버"></td>
+                        <td>구글</td>
+                        <td>23,029,260</td>
+                        <td>3.42%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article id="데이터베이스 서버">
+            <h2><a href="https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EC%84%9C%EB%B2%84" target="_blank">데이터베이스 서버</a></h2>
+            <p>
+                데이터베이스(영어: database, DB)는 여러 사람이 공유하여 사용할 목적으로 체계화해 통합, 관리하는 데이터의<br>
+                집합이다. 작성된 목록으로써 여러 응용 시스템들의 통합된 정보들을 저장하여 운영할 수 있는 공용 데이터<br>
+                들의 묶음이다. 데이터베이스에 속해있는 모델은 다양하다.
+            </p>
+        </article>
+        <article id="애플리케이션 서버">
+            <h2><a href="https://ko.wikipedia.org/wiki/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EC%84%9C%EB%B2%84" target="_blank">애플리케이션 서버</a></h2>
+            <p>애플리케이션 서버는 2가지 의미로 사용된다.</p>
+            <ul>
+                <li>애플리케이션 서버 (하드웨어)는 웹 서버와 데이터베이스 서버의 중간에 위치하여 웹 애플리케이션 서버(WAS)가 동작하는 하드웨어를 일컫음.</li>
+                <li><a href="https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EC%84%9C%EB%B2%84" target="_blank">애플리케이션 서버 (소프트웨어)</a>는 웹용 프로그램을 동작시킬수 있도록 해주는 소프트웨어 플랫폼을 의미함.</li>
+            </ul>
+        </article>
+        <article id="게임 서버">
+            <h2><a href="https://ko.wikipedia.org/wiki/%EA%B2%8C%EC%9E%84_%EC%84%9C%EB%B2%84" target="_blank">게임 서버</a></h2>
+            <p>
+                게임 서버(game server)란 멀티플레이 비디오 게임을 즐기기 위해 게임 클라이언트에 쓰이는 서버로, 자신의 컴퓨터나 다른 사람의 컴퓨터에서 실행된다.
+            </p>
+        </article>
+    </section>
+    <footer>
+        <a href="2021-2-WebProg-C2-HW4-안지성-32202546-Survey.html" target="_blank">설문조사</a>
+        <p>2021년 9월 13일 작성, 위키피디아 참고</p>
+    </footer>
+</body>
+</html>

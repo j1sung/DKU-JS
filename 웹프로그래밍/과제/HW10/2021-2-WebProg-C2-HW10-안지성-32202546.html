@@ -1,0 +1,59 @@
+<!--HW10 안지성 32202546 dalssagi00@gmail.com-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>마우스 클릭 연습</title>
+    <style>
+       table {
+        border : 1px solid rgb(0, 0, 0);
+        border-collapse : collapse;
+        }
+        td {
+            border : 1px solid rgb(0, 0, 0);
+            width : 50px;
+            height : 50px;
+            padding : 0px;
+        }
+    </style>
+    <script>
+        var select=0;
+        var img = new Image();
+        img.src="donkey.png";
+        function set(){
+            var table = document.getElementById("t");
+
+            for(var i=0; i<10; i++){
+                var row = document.createElement("tr");
+                for(var j=0; j<10; j++){
+                    var col = document.createElement("td");
+                    col.innerHTML = "<img scr=''>"
+                    row.appendChild(col);
+                }
+                table.appendChild(row);
+            }
+
+            for(var i=0; i<100; i++){
+                document.images[i].onclick=moveImage;
+                document.images[i].style.visibility = "hidden";
+            }
+            moveImage();
+        }
+
+        function moveImage(){
+            document.images[select].src="";
+            document.images[select].style.visibility = "hidden";
+            select = Math.floor(Math.random()*100);
+            document.images[select].src=img.src;
+            document.images[select].style.visibility = "visible";
+        }
+    </script>
+</head>
+<body onload="set()">
+    <h3>마우스 클릭 연습</h3>  
+    <hr>
+    <table id=t></table>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+* {margin: 0px; padding: 0px;}
+header { background-color:#fffd8b;}
+h1 { color:#f79977; text-align: center;}
+section { margin: 20px;}
+fieldset { background-color: #a9f3ad; padding-bottom: 20px;}
+span { color:blue; font-weight: bold;}
+footer { background-color: #cb79d3; padding-top:20px; padding-bottom: 25px;}

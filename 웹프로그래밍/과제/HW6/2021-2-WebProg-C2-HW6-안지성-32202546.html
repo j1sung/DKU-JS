@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>별문자(*) 출력하기</title>
+</head>
+<body>
+    <h2>별 문자 출력하기</h2>
+    <hr>
+    <div id ="result"></div>
+    <script>
+        var res = document.getElementById("result");
+
+        function perform(num){
+            var N = parseInt(num);
+
+            if(N == null){
+                // 취소 버튼이나 다이얼로그를 닫은 경우
+                res.innerHTML = "취소했군요!";
+            }
+            else if(isNaN(N)){
+                // 아무 값도 입력하지 않은 경우
+                res.innerHTML = "입력 오류 입니다.";
+            }
+
+            else{
+                printStar(N);
+            }
+        }
+
+        function printStar(N){
+            if(N>0){
+                for(var i=1; i<=N; i++){
+                    for(var j=1; j<=i; j++){
+                        document.write("*");
+                    }
+                    document.write('<br>');
+                }
+            }
+            else{
+                res.innerHTML = "입력 오류 입니다.";
+            }
+        }
+
+        var n = prompt("정수를 입력하세요", "");
+        perform(n);
+        
+    </script>
+</body>
+</html>

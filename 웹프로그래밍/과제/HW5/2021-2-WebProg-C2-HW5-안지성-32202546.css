@@ -1,0 +1,20 @@
+* {margin: 0px; padding: 0px;}
+header { background-color:#fffd8b;}
+h1 { text-align: center;}
+nav { background-color: orange; 
+      padding-top: 20px;
+      float:left;
+      width: 15%;
+      height: 1620px;
+    }
+nav ul {padding-left: 50px;}
+nav ul ul{padding-left: 40px;}
+section.S { background-color: aqua;
+            height: 1600px;
+            padding-left: 20px;
+        }
+section.S, article {padding:20px;}
+#애플리케이션_서버 ul{padding-left:280px;}
+p { font-family: 'Times New Roman', Times, serif; text-indent: 1em; font-size: 1em;}
+footer { background-color: #cb79d3;}
+footer,a,p {padding-top:20px; padding-bottom: 20px;}
